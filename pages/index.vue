@@ -9,6 +9,37 @@
         </button>
       </div>
     </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col col--4">
+            <div style="background: black; padding: 40px; color: white;">
+              ITEM1
+            </div>
+          </div>
+          <div class="col col--4">
+            <div style="background: black;  padding: 40px; color: white;">
+              ITEM1
+            </div>
+          </div>
+          <div class="col col--4">
+            <div style="background: black;  padding: 40px; color: white;">
+              ITEM1
+            </div>
+          </div>
+          <div class="col col--6">
+            <div style="background: black;  padding: 40px; color: white;">
+              ITEM1
+            </div>
+          </div>
+          <div class="col col--6">
+            <div style="background: black;  padding: 40px; color: white;">
+              ITEM1
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -16,12 +47,14 @@
 .hero {
   padding: 0 16px;
   height: 600px;
-  background: #000;
   display: flex;
   flex-flow: column;
   justify-content: center;
-  color: #fff;
+  color: $color-primary;
   background: center/cover url(/images/hero.jpg);
+  @include sp {
+    color: blue;
+  }
   &__title {
     font-size: 32px;
     font-weight: bold;

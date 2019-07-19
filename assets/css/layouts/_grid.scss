@@ -1,0 +1,14 @@
+.row {
+  display: flex;
+  margin: -16px;
+  flex-wrap: wrap;
+}
+.col {
+  padding: 16px;
+  box-sizing: border-box;
+}
+@for $i from 1 through 12 {
+  .col--#{$i} {
+    width: $i / 12 * 100%;
+  }
+}
